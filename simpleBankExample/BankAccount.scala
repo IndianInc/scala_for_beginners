@@ -30,8 +30,8 @@ val ba2 = ba1.credit(Money(5.0))
 val ba3 = ba2.debit(Money(8.5))
 val ba4 = Try(ba3.debit(Money(10.0)))
 
-// println(s"""
-//   |Initial state: $ba1
-//   |After credit of $$5.0: $ba2
-//   |After debit of $$8.5: $ba3
-//   |After debit of $$10.0: $ba4""".stripMargin)
+println(s"""
+  |Initial state: $ba1
+  |After credit of $$5.0: $ba2
+  |After debit of $$8.5: $ba3
+  |After debit of $$10.0: $ba4""".stripMargin)
